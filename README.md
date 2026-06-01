@@ -18,17 +18,16 @@ KGDNet is a binary change-detection model for bi-temporal remote-sensing images.
 ## Repository Layout
 
 ```text
-KGDNet_new/
+KGDNet/
 +-- train.py                         # Training entry point
 +-- pred_eval.py                     # Batch inference and metric evaluation
 +-- environment.yml                  # Conda environment
 +-- FastSAM-x.pt                     # FastSAM-x checkpoint used by default
 +-- architecture.png                 # Network overview figure
-+-- KGDNet_*.pdf                     # Paper PDF
 +-- datasets/
 |   +-- cd_dataset.py                # Unified RGB + depth dataset loader
 +-- models/
-|   +-- KGDNet.py             # Main KGDNet implementation
+|   +-- KGDNet_simple.py             # Main KGDNet implementation
 |   +-- FastSAM/                     # Vendored FastSAM code
 |   +-- Dav2/                        # Depth Anything V2 helper code
 +-- utils/
@@ -69,7 +68,7 @@ The main model initializes FastSAM with:
 KGDNet(model_name='FastSAM-x.pt')
 ```
 
-Place `FastSAM-x.pt` in the repository root, or change `model_name` in `models/KGDNet.py`.
+Place `FastSAM-x.pt` in the repository root, or change `model_name` in `models/KGDNet_simple.py`.
 
 For depth generation, pass the Depth Anything V2 checkpoint path to `models/Dav2/pred_depth.py` with `--checkpoint`.
 
