@@ -252,13 +252,13 @@ If you use this code or KGDNet in your research, please cite:
 ```bibtex
 @ARTICLE{11540179,
   author={Yang, Zongyu and Li, Haitao and Gu, Haiyan and Yang, Yi and Ding, Shaopeng and Kong, Haozhu},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  title={KGDNet: Knowledge-Guided Decoupled Modeling of Heterogeneous Change Mechanisms for Remote Sensing Change Detection},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={KGDNet: Knowledge-Guided Decoupled Modeling of Heterogeneous Change Mechanisms for Remote Sensing Change Detection}, 
   year={2026},
-  volume={},
+  volume={64},
   number={},
-  pages={1-22},
-  keywords={Remote sensing, change detection, knowledge-guided learning, multimodal data alignment, decoupled change modeling},
+  pages={5624422-5624422},
+  keywords={Change detection (CD), decoupled change modeling, knowledge-guided learning, multimodal data alignment, remote sensing},
   doi={10.1109/TGRS.2026.3698111}
 }
 ```
